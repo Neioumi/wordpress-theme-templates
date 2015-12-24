@@ -1,0 +1,22 @@
+/* ===============================================================
+ Common
+=============================================================== */
+
+/* Bender Prefix */
+$prefixList: -webkit-, -moz-, -ms-, null;
+
+/* Float */
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; }
+
+/* sprite */
+$spriteimg: url(../img/sprite.png);
+
+%sprite_setting {
+  display: inline-block;
+  background-image: $spriteimg;
+  background-repeat: no-repeat;
+  border: 0;
+  text-indent: -9999px;
+}

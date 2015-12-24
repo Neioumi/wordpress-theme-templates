@@ -1,0 +1,33 @@
+/* ===============================================================
+ Mixins
+=============================================================== */
+
+@mixin transition($value) {
+  @each $prefix in $prefixList {
+    #{$prefix}transition: $value;
+  }
+}
+
+@mixin border_radius($value: 4px) {
+  @each $prefix in $prefixList {
+    #{$prefix}border-radius: $value;
+  }
+}
+
+@mixin box_shadow($value...) {
+  @each $prefix in $prefixList {
+    #{$prefix}box-shadow: $value;
+  }
+}
+
+@mixin text_shadow($value...) {
+  @each $prefix in $prefixList {
+    #{$prefix}text-shadow: $value;
+  }
+}
+
+@mixin gradient($value...) {
+  @each $prefix in $prefixList {
+    background: #{$prefix}liner-gradient($value);
+  }
+}
