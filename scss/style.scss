@@ -13,9 +13,12 @@ Author URI: http://fromdot.com/
 // Import Bootstrap Compass integration
 @import "bootstrap-compass";
 // Import custom Bootstrap variables
-@import "modules/bootstrap-variables";
+@import "lib/bootstrap-variables";
 // Import Bootstrap for Sass
 @import "bootstrap";
+
+// Import Font Awesome
+@import "lib/font-awesome/font-awesome";
 
 @import "modules/common";
 @import "modules/mixins";
